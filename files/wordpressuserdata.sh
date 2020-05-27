@@ -15,7 +15,7 @@ chmod -R 755 /var/www/html/
 cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
 sed -i 's/database_name_here/wordpress_db/g' /var/www/html/wp-config.php
 sed -i 's/username_here/wordpress/g' /var/www/html/wp-config.php
-sed -i 's/password_here/sc@R88&yutet1/g' /var/www/html/wp-config.php
+sed -i 's/password_here/sc@R88yutet1/g' /var/www/html/wp-config.php
 sed -i 's/localhost/${DB_HOST}/g' /var/www/html/wp-config.php
 systemctl restart httpd
 sleep 20

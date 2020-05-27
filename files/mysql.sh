@@ -8,6 +8,6 @@ newPassword="wh@teverYouLik3"
 # resetting temporary password
 mysql --connect-expired-password -uroot -p"$${my_password}" -Bse "ALTER USER 'root'@'localhost' IDENTIFIED BY '$newPassword';"
 
-mysql -u root -p"$${newPassword}" -e "create user 'wordpress'@'%' identified by 'sc@R88&yutet1';"
+mysql -u root -p"$${newPassword}" -e "create user 'wordpress'@'%' identified by 'sc@R88yutet1';"
 mysql -u root -p"$${newPassword}" -e "create database wordpress_db"
-mysql -u root -p"$${newPassword}" -e "grant all privileges on wordpress_db.* to 'wordpress'@'%' identified by 'sc@R88&yutet1'"
+mysql -u root -p"$${newPassword}" -e "grant all privileges on wordpress_db.* to 'wordpress'@'%' identified by 'sc@R88yutet1'"
