@@ -1,3 +1,4 @@
+########### VPC Creation #######
 resource "aws_vpc" "vpc_terraform" {
   cidr_block                       = var.cidr
   instance_tenancy                 = var.instance_tenancy
