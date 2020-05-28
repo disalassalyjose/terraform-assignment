@@ -1,3 +1,4 @@
+### Contains Variables and configuration Properties #######
 variable "access_key" {}
 variable "secret_key" {}
 variable "region" {
