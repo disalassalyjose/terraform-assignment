@@ -1,4 +1,5 @@
 #!/bin/bash
+##### My Sql Installation Files####
 wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
 yum localinstall -y mysql57-community-release-el7-11.noarch.rpm 
 yum install -y mysql-community-server
