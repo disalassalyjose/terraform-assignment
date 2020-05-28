@@ -42,7 +42,7 @@ resource "aws_instance" "terraform-public" {
 #####  count = "var.instance_count"
 
 provisioner "local-exec" {
-  command = "echo ${aws_instance.terraform-public.public_ip} >> ipaddress.txt"
+ command = "echo ${aws_instance.terraform-public.public_ip} >> ipaddress.txt"
 }
 
 ##### Public Subnet assign to instance #####
@@ -75,7 +75,7 @@ resource "aws_instance" "terraform-nat" {
 #####  count = "var.instance_count"
 
 provisioner "local-exec" {
-  command = "echo ${aws_instance.terraform-public.private_ip} >> ipaddress.txt"
+  command = "echo ${aws_instance.terraform-public.public_ip} >> ipaddress.txt"
 }
 
 ##### Subnet assign to instance #####
