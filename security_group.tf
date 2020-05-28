@@ -1,3 +1,4 @@
+######### Security Group Creation #########
 resource "aws_security_group" "allow_ssh" {
   name        = "allow_SSH"
   description = "Allow SSH inbound traffic"
